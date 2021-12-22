@@ -56,10 +56,8 @@ class MainActivity : AppCompatActivity() , MainVu {
 
         adapter.setOnUserItemClickListener{ data->
             Log.i("Michael","Click User Data")
-            val it = Intent(this, Page2Activity::class.java)
-            it.putExtra("login",data.login)
-            startActivity(it)
-            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
+            presenter.onUserItemClickListener(data)
+
 
         }
 
@@ -69,6 +67,13 @@ class MainActivity : AppCompatActivity() , MainVu {
     override fun clearRecyclerView() {
         adapter.setDataArray(ArrayList())
         adapter.notifyDataSetChanged()
+    }
+
+    override fun intentToPage2(data: UserData) {
+        val it = Intent(this, Page2Activity::class.java)
+        it.putExtra("login",data.login)
+        startActivity(it)
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout)
     }
 
 }

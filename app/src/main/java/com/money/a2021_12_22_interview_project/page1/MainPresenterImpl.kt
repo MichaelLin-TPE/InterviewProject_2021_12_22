@@ -54,5 +54,9 @@ class MainPresenterImpl(mainVu: MainVu) : MainPresenter {
         mView.clearRecyclerView()
     }
 
+    override fun onUserItemClickListener(data: UserData) {
+        mView.intentToPage2(data)
+    }
+
 
 }
