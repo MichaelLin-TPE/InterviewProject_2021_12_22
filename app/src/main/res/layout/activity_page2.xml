@@ -4,12 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Page2Activity">
+    tools:context=".page2.Page2Activity">
 
+
+    <ImageView
+        android:id="@+id/btn_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@null"
+        android:src="@drawable/close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+
+
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/user_photo"
+        app:riv_oval="true"
+        app:layout_constraintTop_toBottomOf="@id/btn_back"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@id/user_photo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/basic_text_color"
+        android:textSize="16sp"
+        android:layout_marginTop="30dp"
+        tools:text="Chris Wanstrath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/user_bio"
+        android:contentDescription="@null"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/user_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <View
+        android:id="@+id/center_line"
+        app:layout_constraintTop_toBottomOf="@id/user_bio"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/grey"
+        android:layout_width="0dp"
+        android:layout_height="1dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_user"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toBottomOf="@id/center_line"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:src="@drawable/map"
+        app:layout_constraintTop_toBottomOf="@id/iv_user"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+    <ImageView
+        android:id="@+id/iv_blog"
+        android:src="@drawable/url"
+        app:layout_constraintTop_toBottomOf="@id/iv_location"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/iv_user"
+        app:layout_constraintLeft_toRightOf="@id/iv_user"
+        app:layout_constraintBottom_toTopOf="@id/tv_status"
+        android:layout_marginStart="30dp"
+        tools:text="mojombo"
+        android:textColor="@color/basic_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toBottomOf="@id/iv_user"
+        app:layout_constraintLeft_toRightOf="@id/iv_user"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="STAFF"
+        android:background="@drawable/status_background"
+        android:textColor="@color/white"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        app:layout_constraintTop_toTopOf="@id/iv_location"
+        app:layout_constraintLeft_toRightOf="@id/iv_location"
+        app:layout_constraintBottom_toBottomOf="@id/iv_location"
+        android:layout_marginStart="30dp"
+        tools:text="mojombo"
+        android:textColor="@color/basic_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_blog"
+        app:layout_constraintTop_toTopOf="@id/iv_blog"
+        app:layout_constraintLeft_toRightOf="@id/iv_blog"
+        app:layout_constraintBottom_toBottomOf="@id/iv_blog"
+        android:layout_marginStart="30dp"
+        tools:text="mojombo"
+        android:textColor="@color/basic_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     
-
-
-
 
 
 

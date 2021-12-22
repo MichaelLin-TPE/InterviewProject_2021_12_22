@@ -1,4 +1,4 @@
-package com.money.a2021_12_22_interview_project
+package com.money.a2021_12_22_interview_project.page1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,9 +6,11 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.money.a2021_12_22_interview_project.page2.Page2Activity
+import com.money.a2021_12_22_interview_project.R
 import com.money.a2021_12_22_interview_project.api.UserData
 
-class MainActivity : AppCompatActivity() ,MainVu{
+class MainActivity : AppCompatActivity() , MainVu {
 
     private lateinit var presenter : MainPresenter
 
@@ -54,10 +56,10 @@ class MainActivity : AppCompatActivity() ,MainVu{
 
         adapter.setOnUserItemClickListener{ data->
             Log.i("Michael","Click User Data")
-            val it = Intent(this,Page2Activity::class.java)
-            it.putExtra("data",data)
+            val it = Intent(this, Page2Activity::class.java)
+            it.putExtra("login",data.login)
             startActivity(it)
-            overridePendingTransition(R.anim.fadein,R.anim.fadeout)
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout)
 
         }
 

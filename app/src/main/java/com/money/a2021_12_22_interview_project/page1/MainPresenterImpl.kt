@@ -1,9 +1,8 @@
-package com.money.a2021_12_22_interview_project
+package com.money.a2021_12_22_interview_project.page1
 
 import android.util.Log
 import com.money.a2021_12_22_interview_project.api.ApiManager
 import com.money.a2021_12_22_interview_project.api.UserData
-import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

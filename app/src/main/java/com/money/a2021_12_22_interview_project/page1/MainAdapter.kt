@@ -1,4 +1,4 @@
-package com.money.a2021_12_22_interview_project
+package com.money.a2021_12_22_interview_project.page1
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.money.a2021_12_22_interview_project.R
 import com.money.a2021_12_22_interview_project.api.UserData
 import com.money.a2021_12_22_interview_project.tool.ImageLoaderManager
 
