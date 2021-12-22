@@ -1,8 +1,9 @@
 package com.money.a2021_12_22_interview_project.api
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-class UserData {
+class UserData : Serializable{
 
     @SerializedName("avatar_url")
     var avatarUrl:String = ""
@@ -39,7 +40,7 @@ class UserData {
     @SerializedName("type")
     var type = ""
     @SerializedName("site_admin")
-    var siteAdmin = ""
+    var siteAdmin = false
 
 
 

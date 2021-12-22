@@ -2,6 +2,7 @@ package com.money.a2021_12_22_interview_project.tool
 
 import android.content.Context
 import android.graphics.Bitmap
+import android.util.Log
 import android.widget.ImageView
 import com.money.a2021_12_22_interview_project.R
 import com.nostra13.universalimageloader.core.DisplayImageOptions
@@ -18,6 +19,7 @@ class ImageLoaderManager {
         private lateinit var imageLoader : ImageLoader
 
         fun init(context: Context) {
+            Log.i("Michael","ImageLoader 初始化")
             val headers = HashMap<String,String>()
             headers["User-Agent"] = "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36"
             imageLoader = ImageLoader.getInstance()

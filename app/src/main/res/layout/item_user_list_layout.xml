@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/item_root"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
@@ -41,7 +42,7 @@
         android:textSize="13sp"
         android:gravity="center"
         android:padding="2dp"
-        tools:text="STAFF"
+        android:text="STAFF"
         android:background="@drawable/status_background"
         android:textColor="@color/white"
         android:layout_width="50dp"

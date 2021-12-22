@@ -51,5 +51,9 @@ class MainPresenterImpl(mainVu: MainVu) : MainPresenter {
         disposable.clear()
     }
 
+    override fun onActivityPause() {
+        mView.clearRecyclerView()
+    }
+
 
 }

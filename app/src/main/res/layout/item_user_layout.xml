@@ -10,7 +10,7 @@
         android:textColor="@color/basic_text_color"
         android:text="@string/title_users"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:textStyle="bold"
         android:layout_marginStart="16dp"

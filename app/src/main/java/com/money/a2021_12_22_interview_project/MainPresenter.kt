@@ -11,4 +11,8 @@ interface MainPresenter {
      * Activity關掉的時候需要做的事情
      */
     fun onActivityDestroy()
+    /**
+     * Activity背影的時候需要做的事情
+     */
+    fun onActivityPause()
 }
