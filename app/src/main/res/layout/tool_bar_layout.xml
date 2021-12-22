@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/title_github_users"
+        app:titleTextColor="@color/white"
+        android:background="@color/tool_background"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/tool_bar_background"
+        android:background="@drawable/tool_bar_shadow"
+        android:id="@+id/tool_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
